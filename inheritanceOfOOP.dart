@@ -13,12 +13,13 @@ class ChildClass extends ParentClass{
   String name;
   @override
   void printInfo(){
+    super.printInfo();
     print("Child Name: $name");
   }
 }
 main(){
-  ParentClass p1 = ParentClass(name: "Abu Hanif");
-  p1.printInfo();
+  // ParentClass p1 = ParentClass(name: "Abu Hanif");
+  // p1.printInfo();
   ChildClass c1 = ChildClass(name: "Md Johirul ISlam");
   c1.printInfo();
 
